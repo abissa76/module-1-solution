@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>hello arvind</title>
+      </head>
+  <body ng-app="LunchCheck">
+
+    <h1>NAME CALCULATOR</h1>
+    <div ng-controller="LunchCheckController">
+      <div >
+            List Of Item:
+            <input type="text" ng-model="name">
+              <input type="button"
+                     ng-click="showMessage(name);"
+                     value="Check If Too Much">
+      </div>
+      <div>
+        Total Count:{{Message}}
+      </div>
+    </div>
+  </body>
+
+</html>
